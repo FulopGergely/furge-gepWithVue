@@ -3,7 +3,7 @@ import Home from "../views/Home.vue";
 
 const routes = [
   {
-    path: "/",
+    path: "/home",
     name: "Home",
     component: Home,
   },
@@ -12,7 +12,7 @@ const routes = [
     name: "About",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    // which is lazy-loaded when the route is visited. (csak akk töltődik be ha már rakttintunk, a home az egyből beölt)
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
